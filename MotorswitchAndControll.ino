@@ -83,7 +83,7 @@ void switchOff()
 
 void setup()
 {
-	TCCR1B = TCCR1B & 0b11111000 | 0x01; // sets Timer1 (Pin 9 and 10) to 31300Hz
+	TCCR1B = TCCR1B & 0b11111000 | 0x01; // sets Timer1 (Pin 9 and 10) to 31300Hz; source: http://playground.arduino.cc/Main/TimerPWMCheatsheet
 	pinMode(BRK,OUTPUT);
 	pinMode(DIR,OUTPUT);
 	pinMode(PWM_out,OUTPUT);
